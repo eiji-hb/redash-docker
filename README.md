@@ -1,6 +1,10 @@
-### run Redash
+### first create db
 ```
 docker compose  run --rm server create_db
+```
+
+### run Redash
+```
 docker compose  up
 ```
 

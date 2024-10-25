@@ -1,3 +1,2 @@
-files
-memo.txt
-postgres-data/
+files/*
+postgres-data/*
