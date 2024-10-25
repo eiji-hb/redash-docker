@@ -1,11 +1,16 @@
 ### first create db
 ```
-docker compose  run --rm server create_db
+docker compose run --rm server create_db
 ```
 
 ### run Redash
 ```
-docker compose  up
+docker compose up
+```
+
+### upgrade
+```
+docker compose run --rm server manage db upgrade
 ```
 
 ### access
