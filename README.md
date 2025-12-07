@@ -47,3 +47,7 @@ docker cp redash_backup.sql <postgres_container_id>:/tmp/redash_backup.sql
 docker exec -i <postgres_container_id> psql -U postgres -d postgres -f /tmp/redash_backup.sql
 docker-compose up -d
 ```
+docker exec -i 7e4ac8908a77 pg_dump -U postgres -d postgres | gzip > ./redash_backup.sql.gz
+
+
+docker exec -it 7e4ac8908a77 psql -U postgres
